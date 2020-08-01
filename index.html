@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<script src="app/js/angular.min.js"></script>
+<script src="app/js/angular-route.js"></script>
+
+<link rel="stylesheet" href="app/assets/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- fawesm -->
+<link href="app/assets/css/all.min.css" rel="stylesheet">
+<!-- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css -->
+<script src="app/assets/js/all.min.js"></script>
+<link rel="stylesheet" href="app/assets/css/font-awesome.min.css" crossorigin="anonymous">
+<!-- fawesm -->
+
+
+<style>
+     .navbar_title{
+        font-size: 18px; 
+        color: black;
+     }
+     .navbar_title:hover{
+        color: red;
+     }
+
+
+     .btn-primary{
+        background-color: #cd2a43;
+        border-color: #cd2a43;
+     }
+
+    .btn-primary:hover{
+        background-color: #cd2a43bf;
+        border-color: #cd2a43;
+     }
+    .footer {
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       height: 50px;
+       background-color: red;
+       color: gray;
+       text-align: center;
+       line-height: 1;
+    }
+
+    .title_image{
+        height: 150px; 
+        width: 500px; 
+        margin-top: 30px;
+    }
+
+    .soc_media:hover{
+        color: #4dabf7;
+    }
+
+@media only screen and (max-width: 1440px) and (min-width: 1025px)  {
+    .title_image{
+        height: 130px !important;
+        width: 480px !important;
+      }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px)  {
+    .title_image{
+        height: 127px !important;
+        width: 345px !important;
+        margin-top: 40px;
+      }
+}
+@media only screen and (max-width: 768px) and (min-width: 600px)  {
+    .title_image{
+        height: 121px !important;
+        width: 324px !important;
+        margin-top: 60px;
+      }
+}
+</style>
+
+
+<body ng-app="school_app">
+
+    <div class="row" style="margin: 0px;">
+        <div class="col-md-4" style="background-color: #cd2a43; height: 250px;">
+            <center>
+                <img src="app/assets/images/logo.png">
+            </center>
+        </div>
+        <div class="col-md-5" style="background-color: #cd2a43;">
+            
+            <img src="app/assets/images/title.png" class="title_image" style="">
+                
+            
+        </div>
+        <div class="col-md-3" style="background-color: #cd2a43;">
+            <br>
+            <a href="" class="soc_media"><i style="color: white;" class=" fab fa-facebook-square fa-3x"></i> </a>
+            &nbsp;
+            <a href="" class="soc_media"><i style="color: white;" class=" fab fa-twitter-square fa-3x"></i> </a>
+            &nbsp;
+            <a href="" class="soc_media"><i style="color: white;" class=" fab fa-instagram-square fa-3x"></i> </a>
+            &nbsp;
+            <br>
+            <br>
+
+            <p style="color: white;"><i  class=" fas fa-mobile-alt" style=""></i><span > 0912345678</span></p>
+            <p style="color: white;"> <i class="far fa-envelope"></i> email@email.com</p>
+        </div>
+    </div>
+    <!-- <div class="col-md-12" style="border: 2px solid red; background-image: url('app/assets/images/placeholder.jpg'); height: 150px; width: 100%;  background-repeat: no-repeat; background-attachment: fixed; background-position: center;"> -->
+    </div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link " href="#"><span class="navbar_title">Home</span></a>
+      <a class="nav-item nav-link " href="#!page1"><span class="navbar_title">About</span> </a>
+      <a class="nav-item nav-link " href="#!page2"> <span class="navbar_title">Enrollments</span> </a>
+      <a class="nav-item nav-link " href="#!page3"> <span class="navbar_title">Curicculum</span> </a>
+      <a class="nav-item nav-link " href="#!page4"> <span class="navbar_title">Rates</span> </a>
+      <a class="nav-item nav-link " href="#!page5"> <span class="navbar_title">Contact Us</span></a>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+    
+
+<div ng-view></div>
+
+
+<br>
+<br>
+<br>
+<br>
+<div class="row footer" style="margin: 0px; margin-top: 20px;">
+    <div class="col-md-12" style=" background-color: #f8f9fa!important; border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0; border: 1px solid #80808073;">
+        &nbsp;
+        <p>@StrifeServer 2020</p>
+    </div>
+</div>
+
+
+
+<script src="app/assets/js/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="app/assets/js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="app/assets/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
+<script src="app/controllers/main_controller.js"></script>
+
+
+
+
+
+<!-- <link rel="stylesheet" href="app/assets/images/logo.png/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+
+<!-- fawesm -->
+<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> -->
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"> -->
+<!-- fawesm -->
+
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="app/controllers/main_controller.js"></script>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
